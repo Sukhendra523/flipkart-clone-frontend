@@ -1,0 +1,39 @@
+main {
+  margin-top: 90px;
+}
+section {
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
+  border-top: 1px solid #e0e0e0;
+  border-radius: 2px;
+}
+.productsByPrice-heading {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.overflow-auto::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.overflow-auto {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
+.item {
+  min-width: 15%;
+}
+.item img {
+  height: 150px;
+}
+.item .img-box {
+  width: 90%;
+}
+.fa-star:before {
+  margin-left: 5px;
+}
+
+.bg-success-2 {
+  background-color: #388e3c;
+}

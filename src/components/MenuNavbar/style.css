@@ -1,0 +1,73 @@
+.menu-navbar > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  padding: 0px 20px;
+  margin: 0;
+}
+.menu-navbar a {
+  text-decoration: none;
+}
+.menu-navbar > ul li {
+  cursor: pointer;
+}
+.menu-navbar > ul > li {
+  padding: 10px 0;
+}
+.menu-navbar > ul > li > a::after {
+  font-family: FontAwesome;
+  content: "\f107";
+  margin-left: 5px;
+}
+.menu-navbar > ul > li:hover > a::after {
+  content: "\f106";
+}
+.menu-navbar > ul > li:hover > a {
+  color: #2874f0;
+}
+.menu-navbar > ul > li > a {
+  font-weight: 500;
+  color: black;
+}
+
+.menu-navbar > ul > li > ul {
+  display: none;
+  flex-direction: row;
+  position: absolute;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 67vh;
+  left: 0;
+  padding: 10px 20px;
+  background: white;
+  box-shadow: inset 0 0 6px 0px #0000002b;
+  top: 40px;
+}
+
+.menu-navbar > ul > li:hover > ul {
+  display: flex;
+}
+
+.menu-navbar > ul > li > ul > li {
+  padding-right: 20px;
+  width: 20%;
+
+  font-size: 14px;
+}
+.menu-navbar > ul > li > ul > li a {
+  color: gray;
+}
+
+.menu-navbar > ul > li > ul > li > a {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.menu-navbar > ul > li > ul > li > a::after {
+  font-family: FontAwesome;
+  content: "\f0da";
+  margin-left: 5px;
+  vertical-align: middle;
+}
