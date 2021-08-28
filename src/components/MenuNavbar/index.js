@@ -8,7 +8,7 @@ const MenuNavbar = () => {
   const renderCategories = (categories) =>
     categories.map((category) => (
       <li key={category._id} title={category.name}>
-        <Link to={`/${category.slug}`}>{category.name}</Link>
+        <Link to={`/${category.slug}?cid=${category._id}&type=${category.type}`}>{category.name}</Link>
 
         {category.children.length > 0 && (
           <ul className="list-unstyled">
